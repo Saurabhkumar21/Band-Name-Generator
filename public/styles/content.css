@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+p{color: palevioletred;}
+
+h1 {
+    color: palevioletred;
+}
+
+.btn {
+    background-color: grey;
+}

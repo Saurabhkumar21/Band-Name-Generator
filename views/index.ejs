@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/content.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <% if(locals.randomAdjective && locals.randomNoun) { %>
+            <h1> <%= randomAdjective %> <%= randomNoun %></h1>
+        <% } else { %>
+            <h1>Welcome to the Band Generator</h1>
+        <% } %>
+        
+       
+        <form action="/submit" method="post">
+            <input class="btn" type="submit" value="Generate Name">
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
